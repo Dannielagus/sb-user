@@ -4,9 +4,9 @@ eureka:
     fetch-registry: true
     service-url:
 #      defaultZone: http://localhost:8000/eureka
-      defaultZone: http://${EUREKA_HOST}:${EUREKA_PORT}/eureka
+      defaultZone: ${EUREKA_DEFAULT_ZONE}
   instance:
-    hostname: ${EUREKA_HOST}
+    hostname: ${EUREKA_INSTANCE_HOST}
     
 server:
   port: 8001
