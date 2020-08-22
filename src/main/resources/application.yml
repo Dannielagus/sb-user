@@ -6,7 +6,7 @@ eureka:
 #      defaultZone: http://localhost:8000/eureka
       defaultZone: http://${EUREKA_HOST}:${EUREKA_PORT}/eureka
   instance:
-    hostname: localhost
+    hostname: ${EUREKA_HOST}
     
 server:
   port: 8001
